@@ -1,77 +1,98 @@
----
+-----
 
-````markdown
-# Atividade P3: Otimização de Hiperparâmetros de MLP com Algoritmos Evolutivos  
+# Atividade P3: Otimização de Hiperparâmetros de MLP com Algoritmos Evolutivos
 
-Este repositório contém a implementação da Atividade P3 da disciplina de Inteligência Artificial, focada na otimização de hiperparâmetros de uma rede neural Multi-Layer Perceptron (MLP) utilizando um Algoritmo Genético.  
+Este repositório contém a implementação da Atividade P3 da disciplina de Inteligência Artificial, focada na otimização de hiperparâmetros de uma rede neural Multi-Layer Perceptron (MLP) utilizando um Algoritmo Genético.
 
----
+-----
 
-## 📌 Descrição do Projeto  
+## 📌 Descrição do Projeto
 
-O objetivo deste trabalho é aplicar técnicas de Computação Evolutiva para encontrar uma combinação eficiente de hiperparâmetros para o `MLPClassifier` do scikit-learn. A abordagem compara o desempenho de uma configuração padrão (baseline) com três variações otimizadas por meio de um Algoritmo Genético.
+O objetivo deste trabalho é aplicar técnicas de Computação Evolutiva para encontrar uma combinação ótima de hiperparâmetros para o `MLPClassifier` do scikit-learn. A abordagem compara o desempenho de um modelo com configuração padrão (baseline) com três variações otimizadas por um Algoritmo Genético.
 
-A eficácia das soluções é avaliada por métricas como **F1-Score**, **Precisão**, **Recall** e também pelo **tempo de execução**, permitindo uma análise crítica entre desempenho e custo computacional.
+A eficácia dos modelos é avaliada por métricas como **F1-Score**, **Precisão** e **Recall**, além do **tempo de execução**, permitindo uma análise crítica do trade-off entre performance e custo computacional.
 
-Todo o desenvolvimento está contido em um único Jupyter Notebook (`.ipynb`), organizado da seguinte forma:  
+O projeto completo está documentado em um único Jupyter Notebook (`atividade_p3.ipynb`), que inclui:
 
-- Fundamentação teórica sobre GAs e tuning de hiperparâmetros  
-- Implementação do baseline e da classe de algoritmo genético  
-- Execução de quatro experimentos  
-- Análise de resultados com gráficos e tabelas comparativas  
+  - Fundamentação teórica da otimização.
+  - Implementação do modelo baseline.
+  - Configuração e execução dos experimentos com o Algoritmo Genético.
+  - Análise de resultados com tabelas e gráficos comparativos.
 
----
+-----
 
-## 🛠 Tecnologias Utilizadas  
+## 🛠️ Tecnologias Utilizadas
 
-- **Python 3**  
-- **Jupyter Notebook**  
-- **Scikit-learn** — para o MLP e cálculo das métricas  
-- **DEAP** — biblioteca de Algoritmos Evolutivos (se aplicável)  
-- **NumPy** — operações vetoriais e manipulação de indivíduos  
-- **Pandas** — tabulação dos resultados  
-- **Matplotlib** — visualização dos gráficos  
+  - **Python 3**
+  - **Jupyter Notebook**
+  - **Scikit-learn**
+  - **DEAP**
+  - **NumPy**
+  - **Pandas**
+  - **Matplotlib**
 
----
+-----
 
-## ▶️ Como Executar  
+## ▶️ Como Executar
 
-1. Clone o repositório:  
-   ```bash
-   git clone https://github.com/NicksTheJesus/Atividade-IA.git
-````
+Para executar este projeto, siga os passos abaixo.
 
-2. Acesse o notebook:
-   `atividade_p3.ipynb`
+### Pré-requisitos
 
-3. Execute-o em um ambiente compatível com Jupyter Notebook (ex: [Google Colab](https://colab.research.google.com), Jupyter Lab ou VS Code).
+  - [Python 3.8+](https://www.python.org/downloads/)
+  - [Git](https://git-scm.com/downloads)
 
-4. Rode todas as células sequencialmente para reproduzir os experimentos e gerar os gráficos comparativos.
+### Passos
 
----
+1.  **Clone o repositório:**
 
-## 👥 Reconhecimentos e Direitos Autorais
+    ```bash
+    git clone https://github.com/NicksTheJesus/Atividade-IA.git
+    cd Atividade-IA
+    ```
 
-@autor: Maria Luiza Monteiro e Nickolas Ferreira Maiolino
-@contato: [maria.lm@discente.ufma.br](mailto:maria.lm@discente.ufma.br) e [nickolas.fm@discente.ufma.br](mailto:nickolas.fm@discente.ufma.br)
-@data última versão: 16/07/2025
-@versão: 1.0
-@outros repositórios: [https://github.com/NicksTheJesus/Atividade-IA](https://github.com/NicksTheJesus/Atividade-IA)
+2.  **Instale as dependências:**
+    (É uma boa prática criar um ambiente virtual antes de instalar)
 
-**@Agradecimentos:** Universidade Federal do Maranhão (UFMA), Professor Doutor Thales Levi Azevedo Valente, e colegas de curso.
+    ```bash
+    pip install -r requirements.txt
+    ```
 
----
+    > **Nota:** Se não tiver um `requirements.txt`, você pode criá-lo com o conteúdo: `scikit-learn deap numpy pandas matplotlib jupyter`
 
-## 📝 Licença (MIT)
+3.  **Inicie o Jupyter Notebook:**
+
+    ```bash
+    jupyter notebook atividade_p3.ipynb
+    ```
+
+    Ou abra o notebook no seu ambiente preferido (Google Colab, VS Code, etc).
+
+4.  **Execute as células:**
+    Rode todas as células sequencialmente para reproduzir os experimentos e gerar os resultados.
+
+-----
+
+## 👥 Autores e Agradecimentos
+
+Este projeto foi desenvolvido por:
+
+  - **Maria Luiza Monteiro** - [maria.lm@discente.ufma.br](mailto:maria.lm@discente.ufma.br)
+  - **Nickolas Ferreira Maiolino** - [nickolas.fm@discente.ufma.br](mailto:nickolas.fm@discente.ufma.br)
+
+**Agradecimentos:**
+Agradecemos à Universidade Federal do Maranhão (UFMA), ao Professor Doutor Thales Levi Azevedo Valente pela orientação, e aos nossos colegas de curso pelo apoio.
+
+-----
+
+## 📝 Licença
 
 Este material é resultado de um trabalho acadêmico para a disciplina **INTELIGÊNCIA ARTIFICIAL**, sob a orientação do professor **Dr. THALES LEVI AZEVEDO VALENTE**, semestre letivo **2025.1**, curso **Engenharia da Computação**, na **Universidade Federal do Maranhão (UFMA)**.
 
-Todo o material é software livre: pode ser usado para fins acadêmicos e comerciais sem custo. Ele é licenciado sob os termos da Licença MIT, compatível com a GPL e de código aberto.
+O projeto é licenciado sob a Licença MIT. O único requisito para seu uso é a devida creditação aos autores.
 
-O único requisito é que, ao utilizar o material, os autores sejam devidamente creditados.
-
-<details>
-<summary>Clique para ver a Licença MIT completa</summary>
+\<details\>
+\<summary\>Clique para ver a Licença MIT completa\</summary\>
 
 **The MIT License (MIT)**
 
@@ -95,9 +116,4 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-</details>
-```
-
----
-
-
+\</details\>
