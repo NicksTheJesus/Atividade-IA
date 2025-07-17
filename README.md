@@ -1,8 +1,11 @@
+---
+
+````markdown
 # Atividade P3: Otimização de Hiperparâmetros de MLP com Algoritmos Evolutivos  
 
 Este repositório contém a implementação da Atividade P3 da disciplina de Inteligência Artificial, focada na otimização de hiperparâmetros de uma rede neural Multi-Layer Perceptron (MLP) utilizando um Algoritmo Genético.  
 
-
+---
 
 ## 📌 Descrição do Projeto  
 
@@ -17,7 +20,7 @@ Todo o desenvolvimento está contido em um único Jupyter Notebook (`.ipynb`), o
 - Execução de quatro experimentos  
 - Análise de resultados com gráficos e tabelas comparativas  
 
-
+---
 
 ## 🛠 Tecnologias Utilizadas  
 
@@ -29,7 +32,7 @@ Todo o desenvolvimento está contido em um único Jupyter Notebook (`.ipynb`), o
 - **Pandas** — tabulação dos resultados  
 - **Matplotlib** — visualização dos gráficos  
 
-
+---
 
 ## ▶️ Como Executar  
 
@@ -45,7 +48,7 @@ Todo o desenvolvimento está contido em um único Jupyter Notebook (`.ipynb`), o
 
 4. Rode todas as células sequencialmente para reproduzir os experimentos e gerar os gráficos comparativos.
 
-
+---
 
 ## 👥 Reconhecimentos e Direitos Autorais
 
@@ -57,7 +60,7 @@ Todo o desenvolvimento está contido em um único Jupyter Notebook (`.ipynb`), o
 
 **@Agradecimentos:** Universidade Federal do Maranhão (UFMA), Professor Doutor Thales Levi Azevedo Valente, e colegas de curso.
 
-
+---
 
 ## 📝 Licença (MIT)
 
@@ -93,3 +96,8 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 </details>
+```
+
+---
+
+
